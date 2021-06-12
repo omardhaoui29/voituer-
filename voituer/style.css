@@ -1,0 +1,306 @@
+
+
+
+.container{
+    display: grid;
+    grid-template-rows: 190px 3fr 1fr;
+}
+
+
+
+.head{ 
+  background-image: url(bbb.jpeg) ;
+
+}
+
+
+
+* {
+  box-sizing: border-box;
+  bottom: 0;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+.contenue{
+    background-color: rgb(204, 108, 105);
+}
+
+.footer{
+    background-color: rgb(37, 39, 41);
+}
+
+
+body {
+    font: normal medium/1.4 sans-serif;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #eee;
+  }
+  tbody tr:nth-child(odd) {
+    background: #ccc;
+  }
+  
+
+
+
+
+  ul li {
+    list-style: none;
+  }
+  
+  ul li a {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+  }
+  ul{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+
+
+
+
+
+  
+
+
+
+.over{
+  display: grid;
+  grid-template-rows: 200px  1fr 300px 100px ;
+}
+
+.head{
+  background-color: cyan;
+}
+
+
+
+h1{
+  color: red;
+  font-size: 50px;
+  
+}
+
+
+.bloc{
+  background-color:seashell;
+  
+
+}
+
+h2{
+  color:red;
+}
+
+
+.footer{
+  background-color: rgb(58, 60, 61);
+
+}
+
+.mess{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+
+
+
+
+
+
+
+
+
+
+.fr{
+ 
+  background-color: rgb(66, 73, 73);
+}
+
+
+
+.form-group{
+  background-color:  rgb(66, 73, 73);;
+}
+
+.form-group select{
+  background-color:  rgb(66, 73, 73);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
